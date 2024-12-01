@@ -28,17 +28,29 @@ Certifique-se de ter o Python instalado na versão 3.7 ou superior.
 2. Navegue até o diretório do projeto:
 
     ```bash
-   cd movie-genre-search
+    cd movie-genre-search
 3. Instale as dependências:
 
    Usando o pip:
 
    ```bash
    pip install -r requirements.txt
-4. Ou, se preferir, crie um ambiente virtual:
+    Ou, se preferir, crie um ambiente virtual:
+   ```bash
+     python -m venv venv
+     source venv/bin/activate  # No Linux/Mac
+     venv\Scripts\activate     # No Windows
+     pip install -r requirements.txt
 
-  ```bash
-  python -m venv venv
-  source venv/bin/activate  # No Linux/Mac
-  venv\Scripts\activate     # No Windows
-  pip install -r requirements.txt
+4. Execute o aplicativo Streamlit:
+     ```bash
+       streamlit run app.py
+
+5. Abra o navegador e acesse http://localhost:8501 para interagir com a aplicação.
+
+### Como Usar
+   .Na interface do Streamlit, insira o gênero de filme desejado (por exemplo, "Comedy", "Action", etc.).
+   .A aplicação exibirá os 10 filmes mais bem avaliados para o gênero selecionado.
+
+
+
